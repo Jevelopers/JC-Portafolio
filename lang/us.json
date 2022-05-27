@@ -1,3 +1,41 @@
 {
+    "header": {
+        "nav__menu": {
+            "item__link--portafolio": "Briefcase",
+            "item__link--contacto": "Contact"
+        },
+
+        "header-content": {
+            "header-content__title": "Jr Developer",
+            "header-content__subtitle": "Designer | front-end | Engineer"
+        }
     
+    },
+    "main": {
+        "about": {
+            "about__subtitle": "Hello my Name Is",
+            "about__text": "Systems engineer / Junior freelance developer of web sites and applications according to customer needs using the SCRUM methodology. I have 2 years of experience in the educational sector with degrees of basic and medium technical work in basic programming. I have teaching and teamwork skills.",
+            "button__primary--descargar": "Download CV"
+        },
+        "resumen": {
+            "resumen__title--client": "Customers",
+            "resumen__title--repository": "Repository",
+            "resumen__title--contact": "Contact"
+        },
+        "stack": {
+            "title stack__title": "Technological Stack",
+            "stack__subtitle": "I design and code beautiful and simple things. I love learning and what I do.",
+            "technology-current__subtitle": "Current skills",
+            "technology-coming__subtitle": "Upcoming skills"
+        },
+        "project": {
+            "project__title": "Projects",
+            "project__subtitle": "Official Portfolio"
+        },
+        "footer": {
+            "footer__text": "2022 JC All rights reserved | made with a lot."
+        }
+    }
+
+
 }
