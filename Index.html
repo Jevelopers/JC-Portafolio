@@ -35,14 +35,22 @@
                 <nav class="nav">
                     <ul class="nav__menu">
                         <li class="item"><a href="" class="item__link">Jhn</li></a>
-                        <li class="item"><a href="#anclaIrProjects" class="item__link item__link--portafolio">Portafolio</li></a>
+                        <li class="item"><a href="#anclaIrProjects" class="item__link item__link--portafolio">Portafolio
+                        </li></a>
                         <li class="item"><a href="" class="item__link item__link--contacto">Contacto</li></a>
                         <li class="item"><a href="" class="item__link">Blog</li></a>
                     </ul>
                     <ul class="nav__menu--extents">
-                        <li class="item"><a href="" data-lenguaje="es" class="item__link--extents">ES</li></a>
+                        <div data-lenguaje="es">
+                            <li class="item"><a href="" class="item__link--extents" id="item__link--español">ES</li></a>
+                        </div>
                         <span class="item__link">|</span>
-                        <li class="item"><a href="" data-lenguaje="us" class="item__link--extents">US</li></a>
+                        <div data-lenguaje="us">
+                            <li class="item"><a href="" class="item__link--extents" id="item__link--english">US</li></a>
+                        </div>
+
+
+
                     </ul>
                     <!--Menú de navegacion para version Mobile-->
                     <ul class="nav-mobile">
@@ -86,9 +94,13 @@
             <div class="about">
                 <h2 class="subtitle about__subtitle">¡Hola!, mi nombre es</h2>
                 <h1 class="title about__title">Jhon Chavarro</h1>
-                <p class="text about__text">Ingeniero de sistemas / Desarrollador freelance Juniors de sitios y aplicaciones web de acuerdo a las necesidades del cliente mediante la metodología SCRUM. Cuento con 2 años de experiencia en el sector educativo con grados de básica y media técnica laboral en programación básica. Poseo habilidades para la enseñanza y trabajo en equipo.</p>
+                <p class="text about__text">Ingeniero de sistemas / Desarrollador freelance Juniors de sitios y
+                    aplicaciones web de acuerdo a las necesidades del cliente mediante la metodología SCRUM. Cuento con
+                    2 años de experiencia en el sector educativo con grados de básica y media técnica laboral en
+                    programación básica. Poseo habilidades para la enseñanza y trabajo en equipo.</p>
                 <a href="./doc/CV-Hoja de vida Jhn Chavarro.pdf" download>
-                    <button class="button button__primary button__primary--descargar"> <i class="fa-solid fa-cloud-arrow-down"></i> Descargara CV</button>
+                    <button class="button button__primary button__primary--descargar"> <i
+                            class="fa-solid fa-cloud-arrow-down"></i> Descargara CV</button>
                 </a>
             </div>
             <!--Seccion #2-->
@@ -109,7 +121,8 @@
             <!--Seccion #3-->
             <div class="stack">
                 <h1 class="title stack__title">Stack Tecnológico</h1>
-                <h1 class="subtitle stack__subtitle">Diseño y codifico cosas hermosas y sencillas.Me encanta aprender y lo que hago. </h1>
+                <h1 class="subtitle stack__subtitle">Diseño y codifico cosas hermosas y sencillas.Me encanta aprender y
+                    lo que hago. </h1>
                 <div class="technology">
                     <div class="technology__current">
                         <h2 class="subtitle technology-current__subtitle">Habilidades actuales</h2>
@@ -132,10 +145,11 @@
                             <li class="coming__item"><i class="fa-brands fa-less"></i></li>
                         </ul>
                     </div>
-                </div>   
+                </div>
             </div>
+
             <!--Seccion #4-->
-           
+
             <div class="project" id="anclaIrProjects">
                 <h1 class="title project__title">Proyectos</h1>
                 <h2 class="subtitle project__subtitle">Portafolio Oficial</h1>
@@ -147,7 +161,7 @@
                         <path fill="#000000"
                             d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
                         </svg>
-                        
+
                     </div>
                     <div class="card__img"></div>
                     <a href="#" class="card_link">
@@ -239,17 +253,18 @@
                     </div>
                 </div>
             </div>
+
+
         </main>
         <!--Footer__Contenido principal-->
         <div class="footer">
             <div class="brand">
                 <h1 class="brand__logo">JC</h1>
             </div>
-            <p class=" text footer__text"><i class="fa-solid fa-copyright"></i> 2022 JC Todos los derechos reservados
-                | Hecho con mucho <span><i class="fa-solid fa-heart"></i></span></p>
+            <p class=" text footer__text">Copyright © Todos los derechos reservados | Desarrollado con mucho ❤ por JC
+            </p>
         </div>
-
-
+        <script src="./js/meScrip.js"></script>
     </div>
 </body>
 

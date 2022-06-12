@@ -193,7 +193,6 @@ body {
   grid-template-columns: repeat(auto-fill, minmax(min-content, max-content));
   grid-template-rows: repeat(auto-fill, minmax(min-content, max-content));
   gap: 5vh;
-  margin: 5rem 10rem;
   position: relative;
 }
 
@@ -205,7 +204,7 @@ body {
   grid-row: 1 / 2;
   align-items: center;
   justify-content: center;
-  margin: 2rem;
+  background: red;
 }
 
 .about__title {
@@ -249,6 +248,7 @@ body {
 .resumen {
   grid-column: 4 / 5;
   grid-row: 1 / 2;
+  background: green;
 }
 
 .resumen__title {
@@ -303,8 +303,7 @@ body {
 .stack {
   grid-column: 1 / 5;
   grid-row: 2 / 3;
-  margin: 5rem 0;
-  justify-self: center;
+  background: purple;
   text-align: center;
 }
 
@@ -319,8 +318,10 @@ body {
 
 .technology {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin: 5rem 0;
+  background: #07111a;
 }
 
 .technology-current__subtitle,
@@ -366,7 +367,7 @@ body {
 .project {
   grid-column: 1 / 2;
   grid-row: 3 / 5;
-  margin: 5rem 0;
+  background: yellowgreen;
 }
 
 .project::before {
@@ -395,7 +396,8 @@ body {
   grid-row: 3 / 5;
   display: flex;
   flex-wrap: wrap;
-  margin: 5rem 0;
+  background: black;
+  justify-content: center;
 }
 
 .card__1 .card__img,
@@ -515,7 +517,7 @@ body {
 /**
 ** Sitio responsive | Media query
 */
-@media screen and (min-width: 300px) and (max-width: 1024px) {
+@media screen and (min-width: 300px) and (max-width: 720px) {
   .navbar {
     padding: 5vh 10vh;
   }
@@ -533,7 +535,7 @@ body {
   }
 
   .header-content__title {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .header-content__subtitle {
@@ -548,22 +550,33 @@ body {
   /**
 ** Main__Contenido principal
 */
-
   .main {
     margin: 2rem;
   }
 
   .about {
     grid-column: 1 / 5;
-    margin: 0 2rem;
+  }
 
+  .about__title {
+    font-size: 5rem;
+  }
+
+  .button {
+    width: 100%;
   }
 
   .resumen {
     display: none;
   }
 
-  .stack {}
+  .project {
+    grid-column: 1 / 5;
+    grid-row: 3 / 4;
+  }
 
-  .project {}
+  .cards {
+    grid-column: 1 / 5 ;
+    grid-row: 4 / 5 ;
+  }
 }
