@@ -109,8 +109,8 @@ html {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  gap: 10vh;
-  padding: 0 30vh;
+  gap: 20vh;
+  padding: 0 20vh;
   
 }
 
@@ -152,6 +152,7 @@ html {
 .text {
   font-family: var(--font-text);
   color: var(--color-text);
+  text-align: justify;
 }
 
 .content__subtitle {
@@ -180,13 +181,71 @@ html {
   color: var(--color-accent);
 }
 
+/*
+  Footer || ENCABEZADO PRINCIPAL
+*/
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  align-items: center;
+  background: var(--color-accent);
+  padding: 2vh 5vh;
+}
+
+.footer__header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.brand__logo--footer {
+  color: var(--color-primary);
+}
+
+.footer-section__text {
+  font-size: 12px;
+}
+
+.item__link--footer {
+  color: var(--color-text);
+
+}
+
+.item__link--footer:hover {
+  color: var(--color-primary);
+}
+
+.footer__social {
+  text-align: center;
+}
+
+.button-social__item--footer:hover {
+  color: var(--color-primary);
+}
+
+
+
 
 /**
 ** Sitio responsive | Media query
 */
 /*MEDIAS QUERY --> Diseño responsive Moviles */
 @media screen and (min-width: 320px) and (max-width: 768px) {
-    
+  
+  .header-content {
+    padding: 0 10vh;
+
+  }
+  .header-content__header{
+
+  }
+  .header-content__image {
+    display: none;
+  }
+
   .header-content {
       padding: 0 20vh;
   }
