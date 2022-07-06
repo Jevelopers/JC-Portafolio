@@ -31,8 +31,7 @@ html {
   width: 100%;
 }
 
-/**
-* *Encabezado principal 
+/* HEADER --> Encabezado principal 
 */
 
 .header {
@@ -62,6 +61,7 @@ html {
   color: var(--color-accent);
 }
 
+/* Navbar --> Barra de nevegacion*/
 .navbar {
   position: relative;
   display: flex;
@@ -74,6 +74,10 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+
+.nav__menu--extents {
+  display: flex;
 }
 
 .item {
@@ -99,6 +103,9 @@ html {
     cursor: pointer;
     display: none;
 }
+
+/* HEADER --> Encabezado principal 
+*/
 
 .header-content {
   position: relative;
@@ -127,11 +134,9 @@ html {
   transform: scale(1.1);
 }
 
-
 .title {
   font-family: var(--font-primary);
   color: var(--color-accent);
-
 }
 
 .subtitle {
@@ -150,6 +155,8 @@ html {
 }
 
 .text {
+  font-size: 20px;
+  font-weight: 100;
   font-family: var(--font-text);
   color: var(--color-text);
   text-align: justify;
@@ -162,7 +169,6 @@ html {
 .content__title {
   font-size: 90px;
 }
-
 
 .button {
   margin: 5vh 0;
@@ -180,6 +186,9 @@ html {
 .button-social__item:hover {
   color: var(--color-accent);
 }
+
+/* MAIN --> Contenido principal 
+*/
 
 /*
   Footer || ENCABEZADO PRINCIPAL
@@ -236,7 +245,7 @@ html {
 @media screen and (min-width: 320px) and (max-width: 768px) {
   
   .header-content {
-    padding: 0 10vh;
+    padding: 0 5vh;
 
   }
   .header-content__header{
@@ -288,5 +297,53 @@ html {
       left: 0;
       margin: 25px;
   }
+
+  /*
+  Footer || ENCABEZADO PRINCIPAL
+*/
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2,1fr);
+  align-items: center;
+  background: var(--color-accent);
+  padding: 2vh 5vh;
+}
+
+.footer__header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.brand__logo--footer {
+  color: var(--color-primary);
+}
+
+.footer-section__text {
+  font-size: 12px;
+}
+
+.item__link--footer {
+  color: var(--color-text);
+  font-size: 12px;
+
+}
+
+.item__link--footer:hover {
+  color: var(--color-primary);
+}
+
+.footer__social {
+  text-align: center;
+}
+
+.button-social__item--footer:hover {
+  color: var(--color-primary);
+}
+
+
 
 }
