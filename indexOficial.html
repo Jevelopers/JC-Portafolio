@@ -6,7 +6,6 @@
     <link rel="shortcut icon" href="./asset/faviconJCOfici.ico" type="image/x-icon">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--Importaciones-->
     <!--Tipografía-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,16 +19,18 @@
 
     <!--Estilos css globales-->
     <link rel="stylesheet" href="./css/styles.css">
-    <title>Jhn | Portafolio Oficial 2022</title>
+    <title>JC| Portafolio Oficial</title>
 </head>
 
 <body>
     <div class="wrapper">
         <header class="header">
             <div class="brand">
-                <a href="Index.html" class="brand__link"><h1 class="brand__logo">JC</h1></a>
+                <a href="" class="brand__link">
+                    <h1 class="brand__logo">JC</h1>
+                </a>
             </div>
-            <!--Menú de navegacion para version Escritorio-->
+            <!--Menú de navegacion-->
             <nav class="navbar">
                 <div class="btn-toggle__close">
                     <i class="fa-solid fa-xmark"></i>
@@ -56,37 +57,76 @@
             </div>
 
         </header>
-        <!--Contenido del encabezado HEADER-->
+        <!--Contenido del encabezado-->
         <div class="header-content">
             <div class="header-content__header">
                 <hgroup>
-                    <h2 class="content__subtitle subtitle">AVISO IMPORTANTE</h2>
-                    <h1 class="content__title title">¡UPPS!<span class="content-header__accent title"> Bajo construcción</span></h1>
+                    <h2 class="content__subtitle subtitle">Hola, mi nombre es</h2>
+                    <h1 class="content__title title">John</h1>
+                    <h2 class="content__title--subtitle title">Chavarro Urrea</h1>
                 </hgroup>
-                <p class="content__text text">Estoy trabajando para que esta página web esté disponible de nuevo el miércoles 21 de julio y poder presentarte mi nuevo diseño y renovado protafilio.Mientras tanto, visítame en mis redes sociales.</p>
-                <div class="button">
-                    <div class="button__social">
-                        <a href="https://web.facebook.com/DesarrolloSYSTECH/?ref=pages_you_manage" target="_blank"><button class="button-social__item"><i class="fa-brands fa-facebook-f"></i></button></a>
-            
-                        <a href=""><button class="button-social__item"><i class="fa-brands fa-instagram"></i></button></a>
-            
-                        <a href="https://wa.me/573134628546" target="_blank"><button class="button-social__item"><i class="fa-brands fa-whatsapp"></i></button></a>
-            
-                        <a href=""><button class="button-social__item"><i class="fa-solid fa-at"></i></button></a>
-                    </div>
-                    <div class="button__ghost"></div>
+                <p class="content__text text">Ingeniero de sistemas | Desarrollador Web Junior Freelance</p>
+                <div class="stack">
+                    <ul class="stack__menu">
+                        <li class="menu__item"><i class="fa-brands fa-css3-alt"></i></li>
+                        <li class="menu__item"><i class="fa-brands fa-js-square"></i></li>
+                        <li class="menu__item"><i class="fa-brands fa-html5"></i></li>
+                        <li class="menu__item"><i class="fa-brands fa-react"></i></li>
+                        <li class="menu__item"><i class="fa-brands fa-github"></i></li>
+                    </ul>
                 </div>
             </div>
             <div class="header-content__image">
-                <img src="./asset/ElementGrafico3.webp" alt="" class="image__responsive" srcset="">
+                <img class="image__responsive" src="./asset/ElementGrafico3.webp" alt="" srcset="">
             </div>
         </div>
+
         <!--Contenido principal-->
-        <main class="main"></main>
+        <main class="main">
+            <!--SOBRE MI | Contenido principal-->
+            <div class="about">
+                <div class="about__imagen">
+                    <img class="image__responsive image__responsive--about" src="./asset/ElementGrafico3.webp" alt="" srcset="">
+                </div>
+                <div class="about__content">
+                    <hgroup>
+                        <h2 class="subtitle">Presentación</h2>
+                        <h1 class="title">Sobre mi</h1>
+                    </hgroup>
+                    <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias deleniti nisi rem quos itaque ipsa. Modi saepe ad, tempore incidunt neque corporis maxime optio totam perferendis vero eaque explicabo dolorem.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda explicabo aspernatur quod excepturi est dicta sint beatae, fugiat ab labore adipisci itaque, consectetur, voluptate harum. Atque iure harum mollitia quasi?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    
+                    <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus ex eveniet eligendi. In laudantium eius autem at nisi alias sed quos! Assumenda fugiat aliquam aut temporibus vel accusantium impedit rerum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, enim esse. Adipisci repellendus, esse saepe dignissimos, aut ullam eligendi nihil, debitis commodi error minima. Recusandae, commodi illo! Incidunt, culpa facilis.</p> 
+                   
+                </div>
+            </div>
+            <!--PROYECTOS | Contenido principal-->
+            <div class="proyect">
+                <div class="proyect__section"></div>
+                <div class="proyect__section"></div>
+                <div class="proyect__section"></div>    
+                <div class="proyect__section"></div>
+            </div>
+            <div class="contact">
+                <h2 class="subtitle">¿Y ahora que?</h2>
+                <h1 class="title">Ponerse en contacto</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem hic fuga, adipisci quae dolore neque earum nemo inventore harum, quis facilis deserunt sunt animi non commodi et, natus dicta? Id.</p>
+                <div>
+                    <a href="">
+                        <button>Hablemos, traeré café</button>
+                    </a>
+                </div>
+            </div>
+            
+        
+        </main>
         <!--Footer__Contenido principal-->
         <footer class="footer">
             <div class="footer__header">
-                <a href="Index.html" class="brand__link"><h1 class="brand__logo brand__logo--footer">JC</h1></a>
+                <a href="Index.html" class="brand__link">
+                    <h1 class="brand__logo brand__logo--footer">JC</h1>
+                </a>
                 <p class="footer-section__text text">Copyright 2022 © Todos los derechos reservados.</p>
             </div>
 
@@ -101,13 +141,18 @@
             </div>
             <div class="footer__social">
                 <a href="https://web.facebook.com/DesarrolloSYSTECH/?ref=pages_you_manage" target="_blank"><button
-                        class="button-social__item button-social__item--footer"><i class="fa-brands fa-facebook-f"></i></button></a>
-        
-                <a href=""><button class="button-social__item button-social__item--footer"><i class="fa-brands fa-instagram"></i></button></a>
-        
-                <a href="https://wa.me/573134628546?text=Hola,%20quiero%20comprar%20ahora"><button class="button-social__item button-social__item--footer"><i class="fa-brands fa-whatsapp"></i></button></a>
-        
-                <a href=""><button class="button-social__item button-social__item--footer"><i class="fa-solid fa-at"></i></button></a>
+                        class="button-social__item button-social__item--footer"><i
+                            class="fa-brands fa-facebook-f"></i></button></a>
+
+                <a href=""><button class="button-social__item button-social__item--footer"><i
+                            class="fa-brands fa-instagram"></i></button></a>
+
+                <a href="https://wa.me/573134628546?text=Hola,%20quiero%20comprar%20ahora"><button
+                        class="button-social__item button-social__item--footer"><i
+                            class="fa-brands fa-whatsapp"></i></button></a>
+
+                <a href=""><button class="button-social__item button-social__item--footer"><i
+                            class="fa-solid fa-at"></i></button></a>
             </div>
         </footer>
         <script src="./js/header.js"></script>
