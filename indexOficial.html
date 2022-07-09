@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Monoton&family=Montserrat:wght@900&family=Roboto+Condensed:wght@300;400;700&family=Squada+One&family=Style+Script&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Monoton&family=Play:wght@400;700&family=Poppins:wght@100;400;900&family=Squada+One&family=Style+Script&display=swap"
         rel="stylesheet">
     <!--Iconografía-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -44,11 +44,11 @@
                 </ul>
                 <ul class="nav__menu--extents">
                     <div data-lenguaje="es">
-                        <li class="item"><a href="" class="item__link" id="item__link--español">ES</li></a>
+                        <li class="item"><a href="" class="item__link item__link--extents" id="item__link--español">ES</li></a>
                     </div>
-                    <span class="item__link">|</span>
+                    <span class="item__line item__link">|</span>
                     <div data-lenguaje="us">
-                        <li class="item"><a href="" class="item__link" id="item__link--english">US</li></a>
+                        <li class="item"><a href="" class="item__link item__link--extents" id="item__link--english">US</li></a>
                     </div>
                 </ul>
             </nav>
@@ -65,7 +65,7 @@
                     <h1 class="content__title title">John</h1>
                     <h2 class="content__title--subtitle title">Chavarro Urrea</h1>
                 </hgroup>
-                <p class="content__text text">Ingeniero de sistemas | Desarrollador Web Junior Freelance</p>
+                <p class="content__text text">Ingeniero de sistemas | Desarrollador Web Jr Freelance</p>
                 <div class="stack">
                     <ul class="stack__menu">
                         <li class="menu__item"><i class="fa-brands fa-css3-alt"></i></li>
@@ -86,40 +86,68 @@
             <!--SOBRE MI | Contenido principal-->
             <div class="about">
                 <div class="about__imagen">
-                    <img class="image__responsive image__responsive--about" src="./asset/ElementGrafico3.webp" alt="" srcset="">
+                    <img class="image__responsive image__responsive--about" src="./asset/ElementGrafico3.webp" alt=""
+                        srcset="">
                 </div>
                 <div class="about__content">
-                    <hgroup>
-                        <h2 class="subtitle">Presentación</h2>
-                        <h1 class="title">Sobre mi</h1>
+                    <hgroup class="hgroud">
+                        <h2 class="about-content__subtitle subtitle">Sobre mí</h2>
+                        <h1 class="about-content__title title">Construyo cosas para la web.
+                        </h1>
                     </hgroup>
-                    <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias deleniti nisi rem quos itaque ipsa. Modi saepe ad, tempore incidunt neque corporis maxime optio totam perferendis vero eaque explicabo dolorem.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda explicabo aspernatur quod excepturi est dicta sint beatae, fugiat ab labore adipisci itaque, consectetur, voluptate harum. Atque iure harum mollitia quasi?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    
-                    <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus ex eveniet eligendi. In laudantium eius autem at nisi alias sed quos! Assumenda fugiat aliquam aut temporibus vel accusantium impedit rerum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, enim esse. Adipisci repellendus, esse saepe dignissimos, aut ullam eligendi nihil, debitis commodi error minima. Recusandae, commodi illo! Incidunt, culpa facilis.</p> 
-                   
+                    <p class="about-content__text text">¡Hola! Mi nombre es John y disfruto creando cosas que viven en Internet. Mi interés en el desarrollo web comenzó en 2013 cuando decidí estudiar una Ingenieria.¡Resulta que jugar con los colores hexadecimales me enseñó mucho sobre HTML y CSS!</p>
+                    <a href="./doc/CV-Hoja de vida Jhn Chavarro.pdf" download>
+                        <button class="button button__primary">Descargar CV</button>
+                    </a>
+
                 </div>
             </div>
             <!--PROYECTOS | Contenido principal-->
-            <div class="proyect">
-                <div class="proyect__section"></div>
-                <div class="proyect__section"></div>
-                <div class="proyect__section"></div>    
-                <div class="proyect__section"></div>
+            <div class="portafolio">
+                <hgroup class="hgroud">
+                    <h1 class="portafolio-content__title title">Portafolio</h1>
+                    <h2 class="portafolio-content__subtitle subtitle">Algunas cosas que he construido</h2>
+                </hgroup>
             </div>
+            <div class="portafolio__grid">
+                <div class="proyect__section">
+                    <div class="proyect-section__content">
+                        <h1 class="title">Titulo del proyecto</h1>
+                        <h2></h2>
+                        <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="proyect__section">
+                    <div class="proyect-section__content">
+                        <h1 class="title">Titulo del proyecto</h1>
+                    </div>
+                </div>
+                <div class="proyect__section">
+                    <div class="proyect-section__content">
+                        <h1 class="title">Titulo del proyecto</h1>
+                    </div>
+                </div>
+                <div class="proyect__section">
+                    <div class="proyect-section__content">
+                        <h1 class="title">Titulo del proyecto</h1>
+                    </div>
+                </div>
+            </div>
+            <!--PROYECTOS | Contenido principal-->
             <div class="contact">
-                <h2 class="subtitle">¿Y ahora que?</h2>
-                <h1 class="title">Ponerse en contacto</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem hic fuga, adipisci quae dolore neque earum nemo inventore harum, quis facilis deserunt sunt animi non commodi et, natus dicta? Id.</p>
+                <h2 class="contact__subtitle subtitle">¿Y ahora que?</h2>
+                <h1 class="contact__title title">Ponerse en contacto</h1>
+                <p class="contact__text text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem hic fuga, adipisci quae dolore
+                    neque earum nemo inventore harum, quis facilis deserunt sunt animi non commodi et, natus dicta? Id.
+                </p>
                 <div>
                     <a href="">
-                        <button>Hablemos, traeré café</button>
+                        <button class="button button__primary">Hablemos, traeré café</button>
                     </a>
                 </div>
             </div>
-            
-        
+
+
         </main>
         <!--Footer__Contenido principal-->
         <footer class="footer">
@@ -131,7 +159,7 @@
             </div>
 
             <div class="footer__menu">
-                <ul class="nav__menu">
+                <ul class="footer__menu nav__menu ">
                     <li class="item"><a href="" class="item__link item__link--footer">Jhn</li></a>
                     <li class="item"><a href="#anclaIrProjects" class="item__link item__link--footer">Portafolio
                     </li></a>
@@ -140,19 +168,23 @@
                 </ul>
             </div>
             <div class="footer__social">
-                <a href="https://web.facebook.com/DesarrolloSYSTECH/?ref=pages_you_manage" target="_blank"><button
-                        class="button-social__item button-social__item--footer"><i
-                            class="fa-brands fa-facebook-f"></i></button></a>
-
-                <a href=""><button class="button-social__item button-social__item--footer"><i
-                            class="fa-brands fa-instagram"></i></button></a>
-
-                <a href="https://wa.me/573134628546?text=Hola,%20quiero%20comprar%20ahora"><button
-                        class="button-social__item button-social__item--footer"><i
-                            class="fa-brands fa-whatsapp"></i></button></a>
-
-                <a href=""><button class="button-social__item button-social__item--footer"><i
-                            class="fa-solid fa-at"></i></button></a>
+                <ul class="menu__social">
+                    <li class="item__social">
+                        <i class="fa-brands fa-github"></i>
+                    </li>
+                    <li class="item__social">
+                        <i class="fa-brands fa-instagram"></i>
+                    </li>
+                    <li class="item__social">
+                        <i class="fa-brands fa-twitter"></i>
+                    </li>
+                    <li class="item__social">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </li>
+                    <li class="item__social">
+                        <i class="fa-brands fa-codepen"></i>
+                    </li>
+                </ul>
             </div>
         </footer>
         <script src="./js/header.js"></script>
