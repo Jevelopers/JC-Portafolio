@@ -79,14 +79,14 @@ html {
 
 .button {
   font-family: var(--font-primary);
-  font-size: 1rem;
-  padding: .5rem 3rem .5rem 3rem;
+  font-size: 1.5rem;
+  padding: .5rem 1.5rem;
   margin: 1rem 0;
   border-radius: 50rem;
+  cursor: pointer;
 }
 
 .button__primary {
-  font-size: 1.5rem;
   background: var(--color-primary);
   color: var(--color-text);
 }
@@ -94,6 +94,15 @@ html {
 .button__primary:hover {
   background: transparent;
   color: var(--color-primary);
+}
+
+.button__outline {
+  background: transparent;
+}
+
+.button__outline:hover {
+  background: var(--color-primary);
+  color: var(--color-text);
 }
 
 /* Contenido del sitio web --> SECCIONES*/
@@ -176,39 +185,35 @@ html {
 }
 
 /* SECCION HEADER --> Contenido*/
-.header-content {
+.header-container {
   position: relative;
   max-width: 100vw;
   min-height: 100vh;
-  background: no-repeat center;
-  background: linear-gradient(#07111a, rgba(0, 0, 0, 0.6)), url('../asset/BackgroundSection1.jpg');
+  background-image: no-repeat center;
+  background-image: linear-gradient(#07111a, rgba(0, 0, 0, 0.6)), url('../asset/BackgroundSection1.jpg');
   background-size: cover;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(476px, 1fr));
   align-items: center;
+  justify-content: center;
   padding: 0 10rem;
 }
 
-.header-content__header {
+.header-container__content {
   display: flex;
   flex-direction: column;
 }
 
-.header-content__image {
-  display: flex;
-  justify-content: center;
+.header-container__title {
+  font-size: 7rem;
 }
 
-.content__title {
-  font-size: 6rem;
-}
-
-.content__title--subtitle {
+.header-container--subtitle {
   font-size: 4rem;
 }
 
-.content__text {
-  font-size: 1rem;
+.header-container__title--subtitle {
+  font-size: 5rem;
 }
 
 .stack {
@@ -227,13 +232,21 @@ html {
   margin-right: 1rem;
 }
 
+.menu__link {
+  color: var(--color-text);
+}
+
 .menu__item:hover {
   color: var(--color-accent);
   transform: scale(1.1);
 }
 
-/* SECCION MAIN --> Contenido*/
 
+.header-content__image {
+  display: flex;
+}
+
+/* SECCION MAIN --> Contenido*/
 .main {
   background: var(--color-accent);
   display: grid;
@@ -244,22 +257,20 @@ html {
 .about {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 5rem;
   margin: 10rem;
 }
 
 .image__responsive--about {
-  width: 30rem;
+  width: 25rem;
 }
 
 .about-content__title {
-  font-size: 6rem;
   color: var(--color-primary);
+  font-size: 4rem;
 }
 
-.about-content__text {
-  font-size: 1.3rem;
-}
 
 /* SECCION DE PORTAFOLIO --> Contenido*/
 

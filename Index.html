@@ -2,7 +2,7 @@
     Nombre Proyecto: JC | Portafolio Ofic
   Desarrollador: Lab Jevelopers
   Fecha de inicio: 01 02 2022
-  Version Actual: 0.1.5
+  Version Actual: 0.5.1
 -->
 <!DOCTYPE html>
 <html lang="es">
@@ -66,14 +66,14 @@
             </div>
         </header>
         <!--Contenido del encabezado-->
-        <div class="header-content">
-            <div class="header-content__header">
+        <div class="header-container">
+            <div class="header-container__content">
                 <hgroup>
-                    <h2 class="content__subtitle subtitle">Hola, mi nombre es</h2>
-                    <h1 class="content__title title">John</h1>
-                    <h2 class="content__title--subtitle title">Chavarro Urrea</h1>
+                    <h2 class="header-container__subtitle subtitle">Hola, mi nombre es</h2>
+                    <h1 class="header-container__title title">John</h1>
+                    <h2 class="header-container__title--subtitle title">Chavarro Urrea</h1>
                 </hgroup>
-                <p class="content__text text">Ingeniero de sistemas | Desarrollador Web Junior</p>
+                <p class="text">Ingeniero de sistemas | Desarrollador Web Junior</p>
                 <div class="stack">
                     <ul class="menu">
                         <li class="menu__item"><i class="fa-brands fa-css3-alt"></i></li>
@@ -81,6 +81,9 @@
                         <li class="menu__item"><i class="fa-brands fa-html5"></i></li>
                         <li class="menu__item"><i class="fa-brands fa-react"></i></li>
                         <li class="menu__item"><i class="fa-brands fa-github"></i></li>
+                        <li class="menu__item">
+                            <i class="fa-brands fa-bootstrap"></i>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -94,7 +97,7 @@
             <!--SOBRE MI | Contenido principal-->
             <div class="about">
                 <div class="about__imagen">
-                    <img class="image__responsive image__responsive--about" src="./asset/ElementGrafico3.webp" alt=""
+                    <img class="image__responsive image__responsive--about" src="./asset/ElementGrafico5.svg" alt=""
                         srcset="">
                 </div>
                 <div class="about__content">
@@ -103,14 +106,17 @@
                         <h1 class="about-content__title title">Construyo cosas para la web.
                         </h1>
                     </hgroup>
-                    <p class="about-content__text text">¡Hola! Mi nombre es John y disfruto creando cosas que viven en
+                    <p class="text">¡Hola! Mi nombre es John y disfruto creando cosas que viven en
                         Internet. Mi interés en el desarrollo web comenzó en 2013 cuando decidí estudiar una
                         Ingenieria.¡Resulta que jugar con los colores hexadecimales me enseñó mucho sobre HTML y CSS!
                     </p>
                     <a href="./doc/CV-Hoja de vida Jhn Chavarro.pdf" download>
-                        <button class="button button__primary">Descargar CV</button>
+                        <button class="button button__primary"><i class="fa-solid fa-cloud-arrow-down"></i> Descargar CV</button>
                     </a>
-
+                    <a href="">
+                        <button class="button button__outline">                        <i class="fa-brands fa-github"></i>
+                             Ver repositorio GitHub</button>
+                    </a>
                 </div>
             </div>
             <!--PROYECTOS | Contenido principal-->
@@ -154,7 +160,7 @@
                 </p>
                 <div>
                     <a href="">
-                        <button class="button button__primary">Hablemos, traeré café</button>
+                        <button class="button button__primary"><i class="fa-solid fa-mug-hot"></i> Hablemos, traeré café</button>
                     </a>
                 </div>
             </div>
@@ -179,19 +185,13 @@
             <div class="footer__social">
                 <ul class="menu">
                     <li class="menu__item">
-                        <i class="fa-brands fa-github"></i>
+                        <a class="menu__link" href="https://github.com/Jevelopers" target="_blank"><i class="fa-brands fa-github"></i></a>
                     </li>
                     <li class="menu__item">
-                        <i class="fa-brands fa-instagram"></i>
+                        <a class="menu__link" href="https://www.linkedin.com/in/john-chavarro-urrea-9b9200129/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
                     </li>
                     <li class="menu__item">
-                        <i class="fa-brands fa-twitter"></i>
-                    </li>
-                    <li class="menu__item">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                    </li>
-                    <li class="menu__item">
-                        <i class="fa-brands fa-codepen"></i>
+                        <a class="menu__link" href="https://codepen.io/jevelopers" target="_blank"><i class="fa-brands fa-codepen"></i></a>
                     </li>
                 </ul>
             </div>
