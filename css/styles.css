@@ -433,6 +433,10 @@ a {
     display: none;
   }
 
+  .header-container__content {
+    align-items: center;
+  }
+
   .btn-toggle__menu,
   .btn-toggle__close i {
     display: block;
@@ -473,7 +477,7 @@ a {
   /* SECCION SOBRE MI --> Contenido*/
   .about {
     flex-direction: column;
-    padding: 5rem;
+    padding: 5rem 4rem;
   }
 
   .about__imagen {
@@ -491,7 +495,7 @@ a {
 
   /* CONTACT --> Contenido*/
   .contact {
-    padding: 5rem;
+    padding: 5rem 4rem;
   }
   
   .button__container--contact {
