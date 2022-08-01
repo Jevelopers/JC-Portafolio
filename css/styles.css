@@ -37,7 +37,6 @@ a {
   --color-accent: #D89216;
 }
 
-
 /* Configuracion básica --> COMPONENTES*/
 .wrapper {
   width: 100%;
@@ -87,6 +86,7 @@ a {
 .button {
   font-family: var(--font-primary);
   font-size: 1.2rem;
+  text-align: center;
   text-transform: uppercase;
   background: var(--color-primary); 
   color: var(--color-text); 
@@ -133,7 +133,7 @@ a {
   padding: 2vh 0;
   z-index: 99;
 }
-
+/* Aplicado con Js*/
 .down {
   background: var(--color-primary);
 }
@@ -144,7 +144,7 @@ a {
   color: var(--color-accent);
 }
 
-/* Barra de nevegación*/
+/* SECCION HEADER ---> Barra de navegación*/
 .navbar {
   position: relative;
   display: flex;
@@ -199,7 +199,7 @@ a {
   position: relative;
   width: 100%;
   height: 100vh;
-  background-image: no-repeat center;
+  background-attachment: fixed;
   background-image: linear-gradient(#07111a, rgba(0, 0, 0, 0.6)), url('../asset/BackgroundSection1.jpg');
   background-size: cover;
   display: grid;
@@ -227,6 +227,7 @@ a {
   font-size: 5rem;
 }
 
+/* SECCION HEADER --> Stack contenido*/
 .stack {
   margin: 1rem 0;
 }
@@ -260,15 +261,11 @@ a {
   width: 50rem;
 }
 
-/* SECCION MAIN --> Contenido*/
-.main {
-  
-}
-
+/* SECCION MAIN*/
 /* SECCIÓN DE SOBRE MI --> Contenido*/
 .about {
-  background: var(--color-accent);
   display: flex;
+  background: var(--color-accent);
   align-items: center;
   justify-content: center;
   gap: 2rem;
@@ -279,7 +276,6 @@ a {
   color: var(--color-primary);
   font-size: 6rem;
 }
-
 
 /* SECCION DE PORTAFOLIO --> Contenido*/
 .portafolio {
@@ -309,7 +305,7 @@ a {
 .card {
   display: grid;
   position: relative;
-  width: 80px;
+  width: 100%;
   height: 100%;
   background-size: cover;
   background-position: center;
@@ -340,12 +336,10 @@ a {
 
 .card:nth-child(2) {
   background-image: url('../asset/BackgroundSection2.jpg');
-
 }
 
 .card:nth-child(3) {
   background-image: url('../asset/BackgroundSection3.jpg');
-
 }
 
 .card:nth-child(4) {
@@ -364,23 +358,17 @@ a {
 /* SECCION CONTACTO --> Contenido*/
 .contact {
   background: var(--color-accent);
+  padding: 10rem;
 }
 
 .contact__container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 10rem;
 }
 
 .contact__title {
   font-size: 6rem;
   color: var(--color-primary);
-}
-
-.contact__text {
-  text-align: center;
 }
 
 /* SECCION FOOTER --> Contenido*/
@@ -419,10 +407,6 @@ a {
 /**
 ** Sitio responsive | Media query
 */
-/* Elementos Con pseudoclase hover*/
-@media (hover:hover) {
-
-}
 /*Diseño responsive Moviles */
 @media screen and (min-width: 320px) and (max-width: 768px) {
 
@@ -430,24 +414,14 @@ a {
     font-size: 12px;
   }
 
+  /* Configuracion básica --> COMPONENTES*/
   .button__container {
     flex-direction: column;
   }
 
+
  /* SECCION HEADER --> Contenido*/
-  .header-container__content {
-    align-items: center;
-  }
-
   .header-content__image {
-    display: none;
-  }
-
-  .about {
-    padding: 5rem;
-  }
-
-  .about__imagen {
     display: none;
   }
 
@@ -460,7 +434,7 @@ a {
   .navbar {
     position: fixed;
     background: var(--color-primary);
-    min-width: 100%;
+    width: 100%;
     height: 100%;
     top: 0;
     right: -100%;
@@ -491,13 +465,24 @@ a {
   /* SECCION SOBRE MI --> Contenido*/
   .about {
     flex-direction: column;
+    padding: 5rem;
   }
 
+  .about__imagen {
+    display: none;
+  }
+
+  /* PORTAFOLIO --> Contenido*/
   .portafolio__hgroud {
     padding: 1rem 5rem;
   }
-  
-  .contact__container {
+
+  .portafolio__container {
+    flex-direction: column;
+  }
+
+  /* CONTACT --> Contenido*/
+  .contact {
     padding: 5rem;
   }
   
@@ -507,51 +492,5 @@ a {
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   html {
     font-size: 15px;
-  }
-
- /* SECCION HEADER --> Contenido*/
-  .header-content {
-    padding: 0 10rem;
-  }
-
-  .header-content__image {
-    display: none;
-  }
-
-  .btn-toggle__menu,
-  .btn-toggle__close i {
-    display: block;
-  }
-
-  .navbar {
-    position: fixed;
-    background: var(--color-primary);
-    min-width: 30vh;
-    height: 100vh;
-    top: 0;
-    right: -100%;
-    padding: 5vh;
-    transition: 0.5s;
-    transition-property: right;
-  }
-
-  .nav__menu {
-    flex-direction: column;
-  }
-
-  .item__link {
-    font-size: 1.5rem;
-
-  }
-
-  .active {
-    right: 0;
-  }
-
-  .btn-toggle__close {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 25px;
   }
 }
