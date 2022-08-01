@@ -1,41 +1,42 @@
 {
-    "header": {
-        "nav__menu": {
-            "item__link--portafolio": "Briefcase",
-            "item__link--contacto": "Contact"
+    "header":{
+        "navbar":{
+            "item__link--home":"Home", 
+            "item__link--work": "work",
+            "item__link--contact": "Contact"
         },
-
-        "header-content": {
-            "header-content__title": "Jr Developer",
-            "header-content__subtitle": "Designer | front-end | Engineer"
+        "header-container": {
+            "header-container__subtitle":"Hello my Name Is",
+            "header-container__text":"Systems Engineer | Junior Web Developer"
         }
-    
     },
     "main": {
         "about": {
-            "about__subtitle": "Hello my Name Is",
-            "about__text": "Systems engineer / Junior freelance developer of web sites and applications according to customer needs using the SCRUM methodology. I have 2 years of experience in the educational sector with degrees of basic and medium technical work in basic programming. I have teaching and teamwork skills.",
-            "button__primary--descargar": "Download CV"
+            "about__content":{
+                "about-content__subtitle":"About me",
+                "about-content__title":"I build things for the web.",
+                "about-content__text":"Hello! My name is John Chavarro and I enjoy designing things that are displayed on the Internet. My interest in web development started in 2013 when I decided to try editing custom wordPress themes. Getting my ideas onto the screen is very exciting, it taught me a lot about HTML and CSS!",
+                "button--download":"Download CV",
+                "button--repository":"view repository"
+            }
         },
-        "resumen": {
-            "resumen__title--client": "Customers",
-            "resumen__title--repository": "Repository",
-            "resumen__title--contact": "Contact"
+        "portafolio":{
+            "portafolio__subtitle":"Some things I have built.",
+            "portafolio__subtitle--enlace":"Ver Laboratorio",
+            "portafolio__title":"Portafolio",
+            "card__content":{
+                "card-content__title":"Title of the project",
+                "card-content__text":"Lorem ipsum dolor sit amet consectetur, adipisicing elit."
+            }
         },
-        "stack": {
-            "title stack__title": "Technological Stack",
-            "stack__subtitle": "I design and code beautiful and simple things. I love learning and what I do.",
-            "technology-current__subtitle": "Current skills",
-            "technology-coming__subtitle": "Upcoming skills"
-        },
-        "project": {
-            "project__title": "Projects",
-            "project__subtitle": "Official Portfolio"
+        "contact": {
+            "contact__subtitle":"And now that?",
+            "contact__title":"Get in contact",
+            "contact__text":"Although I am currently looking for new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll do my best to answer you!",
+            "button--contact":"Let's talk! I will bring coffee"
         },
         "footer": {
-            "footer__text": "2022 JC All rights reserved | made with a lot."
+            "footer-header__text":"Copyright 2022 © All rights reserved."
         }
     }
-
-
 }

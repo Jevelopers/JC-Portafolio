@@ -29,7 +29,7 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="wrapper" id="anclaHome">
         <!--Sección HEADER -->
         <header class="header">
             <div class="brand">
@@ -43,10 +43,10 @@
                     <i class="fa-solid fa-xmark"></i>
                 </div>
                 <ul class="nav__menu">
-                    <li class="item"><a href="" class="item__link">Jhn</li></a>
-                    <li class="item"><a href="#anclaIrProjects" class="item__link">Portafolio
+                    <li class="item"><a href="#anclaHome" class="item__link" data-string="item__link--home" >Jhn</li></a>
+                    <li class="item"><a href="#anclaIrProjects" class="item__link" data-string="item__link--work">Portafolio
                     </li></a>
-                    <li class="item"><a href="" class="item__link">Contacto</li></a>
+                    <li class="item"><a href="#anclaContact" class="item__link" data-string="item__link--contact">Contacto</li></a>
                     <li class="item"><a href="" class="item__link">Blog</li></a>
                 </ul>
                 <ul class="nav__menu--extents">
@@ -69,11 +69,11 @@
         <div class="header-container">
             <div class="header-container__content">
                 <hgroup>
-                    <h2 class="header-container__subtitle subtitle">Hola, mi nombre es</h2>
+                    <h2 class="header-container__subtitle subtitle" data-string="header-container__subtitle">Hola, mi nombre es</h2>
                     <h1 class="header-container__title title">John</h1>
                     <h2 class="header-container__title--subtitle title">Chavarro Urrea</h1>
                 </hgroup>
-                <p class="text">Ingeniero de sistemas | Desarrollador Web Junior</p>
+                <p class="text" data-string="header-container__text">Ingeniero de sistemas | Desarrollador Web Junior</p>
                 <div class="stack">
                     <ul class="menu">
                         <li class="menu__item"><i class="fa-brands fa-css3-alt"></i></li>
@@ -88,97 +88,95 @@
                 </div>
             </div>
             <div class="header-content__image">
-                <img class="image__responsive" src="./asset/ElementGrafico3.webp" alt="" srcset="">
+                <img class="image__responsive image__responsive--header-content" src="./asset/ElementGrafico3.webp" alt="" srcset="">
             </div>
         </div>
-
-        <!--Contenido principal-->
         <main class="main">
             <!--SOBRE MI | Contenido principal-->
             <div class="about">
                 <div class="about__imagen">
-                    <img class="image__responsive image__responsive--about" src="./asset/ElementGrafico5.svg" alt=""
-                        srcset="">
+                    <img class="image__responsive" src="./asset/ElementGrafico4.svg" alt="" srcset="">
                 </div>
                 <div class="about__content">
                     <hgroup class="hgroud">
-                        <h2 class="about-content__subtitle subtitle">Sobre mí</h2>
-                        <h1 class="about-content__title title">Construyo cosas para la web.
+                        <h2 class="about-content__subtitle subtitle" data-string="about-content__subtitle">Sobre mí</h2>
+                        <h1 class="about-content__title title" data-string="about-content__title">Construyo cosas para la web.
                         </h1>
                     </hgroup>
-                    <p class="text">¡Hola! Mi nombre es John y disfruto creando cosas que viven en
-                        Internet. Mi interés en el desarrollo web comenzó en 2013 cuando decidí estudiar una
-                        Ingenieria.¡Resulta que jugar con los colores hexadecimales me enseñó mucho sobre HTML y CSS!
-                    </p>
-                    <a href="./doc/CV-Hoja de vida Jhn Chavarro.pdf" download>
-                        <button class="button button__primary"><i class="fa-solid fa-cloud-arrow-down"></i> Descargar CV</button>
-                    </a>
-                    <a href="">
-                        <button class="button button__outline">                        <i class="fa-brands fa-github"></i>
-                             Ver repositorio GitHub</button>
-                    </a>
+                    <p class="text" data-string="about-content__text">Hola! Mi nombre es John Chavarro y disfruto diseñando cosas que se muestran en Internet. Mi interés en el desarrollo web comenzó en 2013 cuando decidí intentar editar temas personalizados de wordPress.¡Resulta muy emocionate trasmitir mis ideas a la pantalla, esto me enseñó mucho sobre HTML y CSS!</p>
+                    <div class="button__container">
+                        <a href="./doc/CV-Hoja de vida Jhn Chavarro.pdf" class="button" download><i class="fa-solid fa-cloud-arrow-down" data-string="button--download"></i> Descargar
+                            CV</a>
+                        <a href="https://github.com/Jevelopers" target="_blank" class="button" data-string="button--repository"><i class="fa-brands fa-github"></i> Ver repositorio
+                            GitHub</a>
+                    </div>
                 </div>
             </div>
             <!--PROYECTOS | Contenido principal-->
-            <div class="portafolio">
-                <hgroup class="hgroud">
-                    <h1 class="portafolio-content__title title">Portafolio</h1>
-                    <h2 class="portafolio-content__subtitle subtitle">Algunas cosas que he construido</h2>
+            <div class="portafolio" id="anclaIrProjects">
+                <hgroup class="portafolio__hgroud hgroud">
+                    <h2 class="portafolio__subtitle subtitle" data-string="portafolio__subtitle">Algunas cosas que he construido. <a class="portafolio__subtitle" data-string="portafolio__subtitle--enlace" href="">Ver Laboratorio</a>
+                    <h1 class="portafolio__title title" data-string="portafolio__title">Portafolio</h1>
+                    </h2>
                 </hgroup>
-            </div>
-            <div class="portafolio__grid">
-                <div class="proyect__section">
-                    <div class="proyect-section__content">
-                        <h1 class="title">Titulo del proyecto</h1>
-                        <h2></h2>
-                        <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <div class="portafolio__container">
+                    <div class="card">
+                        <div class="card__content">
+                            <h1 class="card-content__title" data-string="card-content__title title">Titulo del proyecto</h1>
+                            <h2></h2>
+                            <p class="card-content__text text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="proyect__section">
-                    <div class="proyect-section__content">
-                        <h1 class="title">Titulo del proyecto</h1>
+                    <div class="card">
+                        <div class="card__content">
+                            <h1 class="title">Titulo del proyecto</h1>
+                            <h2></h2>
+                            <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="proyect__section">
-                    <div class="proyect-section__content">
-                        <h1 class="title">Titulo del proyecto</h1>
+                    <div class="card">
+                        <div class="card__content">
+                            <h1 class="title">Titulo del proyecto</h1>
+                            <h2></h2>
+                            <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="proyect__section">
-                    <div class="proyect-section__content">
-                        <h1 class="title">Titulo del proyecto</h1>
+                    <div class="card">
+                        <div class="card__content">
+                            <h1 class="title">Titulo del proyecto</h1>
+                            <h2></h2>
+                            <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <!--PROYECTOS | Contenido principal-->
-            <div class="contact">
-                <h2 class="contact__subtitle subtitle">¿Y ahora que?</h2>
-                <h1 class="contact__title title">Ponerse en contacto</h1>
-                <p class="contact__text text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem hic
-                    fuga, adipisci quae dolore
-                    neque earum nemo inventore harum, quis facilis deserunt sunt animi non commodi et, natus dicta? Id.
-                </p>
-                <div>
-                    <a href="">
-                        <button class="button button__primary"><i class="fa-solid fa-mug-hot"></i> Hablemos, traeré café</button>
-                    </a>
                 </div>
             </div>
 
-
+            <!--CONTACTO | Contenido principal-->
+            <div class="contact" id="anclaContact">
+                <div class="contact__container">
+                    <h2 class="contact__subtitle subtitle" data-string="contact__subtitle">¿Y ahora que?</h2>
+                    <h1 class="contact__title title" data-string="contact__title">Pongase en contacto</h1>
+                    <p class="contact__text text" data-string="contact__text">Aunque actualmente estoy buscando nuevas oportunidades, mi bandeja de entrada siempre está abierta. Ya sea que tenga una pregunta o simplemente quiera saludar, ¡haré todo lo posible para responderle!
+                    </p>
+                    <div class="button__container">
+                        <a href="" class="button" data-string="button--contact"><i class="fa-solid fa-mug-saucer"></i> ¡Hablemos! Traeré café</a>
+                    </div>
+                </div>
+            </div>
+            
         </main>
         <!--Footer__Contenido principal-->
         <footer class="footer">
             <div class="footer__header">
                 <h1 class="brand__logo brand__logo--footer">JC</h1>
-                <p class="footer-header__text text">Copyright 2022 © Todos los derechos reservados.</p>
+                <p class="footer-header__text text" data-string="footer-header__text">Copyright 2022 © Todos los derechos reservados.</p>
             </div>
             <div class="footer__menu">
                 <ul class="footer__menu">
-                    <li class="item"><a href="" class="item__link item__link--footer">Jhn</li></a>
-                    <li class="item"><a href="#anclaIrProjects" class="item__link item__link--footer">Portafolio
+                    <li class="item"><a href="" class="item__link item__link--footer" data-string="item__link--home">Jhn</li></a>
+                    <li class="item"><a href="#anclaIrProjects" class="item__link item__link--footer" data-string="item__link--work">Portafolio
                     </li></a>
-                    <li class="item"><a href="" class="item__link item__link--footer">Contacto</li></a>
+                    <li class="item"><a href="" class="item__link item__link--footer" data-string="item__link--contact">Contacto</li></a>
                     <li class="item"><a href="" class="item__link item__link--footer">Blog</li></a>
                 </ul>
             </div>
