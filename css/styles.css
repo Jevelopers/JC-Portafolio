@@ -84,6 +84,7 @@ a {
 }
 
 .button {
+  width: 100%;
   font-family: var(--font-primary);
   font-size: 1.2rem;
   text-align: center;
@@ -358,18 +359,25 @@ a {
 /* SECCION CONTACTO --> Contenido*/
 .contact {
   background: var(--color-accent);
-  padding: 10rem;
+  padding: 10rem;  
 }
 
 .contact__container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact__title {
   font-size: 6rem;
   color: var(--color-primary);
 }
+
+.button__container--contact {
+  padding: 0 25rem;
+}
+
 
 /* SECCION FOOTER --> Contenido*/
 .footer {
@@ -486,6 +494,9 @@ a {
     padding: 5rem;
   }
   
+  .button__container--contact {
+    padding: 0;
+  }
 }
 
 /*Diseño responsive Tablet */
